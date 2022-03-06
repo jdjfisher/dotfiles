@@ -1,0 +1,15 @@
+
+alias reload="source ~/.bashrc"
+
+alias please="sudo"
+
+alias l="ls -la"
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+
+alias space="ncdu /"
+
+# Laravel Sail
+alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'

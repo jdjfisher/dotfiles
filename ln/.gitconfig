@@ -1,0 +1,11 @@
+[alias]
+	whoami = config user.email
+
+[user]
+        name = jdjfisher
+        
+[pull]
+        rebase = true
+        
+[init]
+	defaultBranch = main

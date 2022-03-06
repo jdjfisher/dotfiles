@@ -1,0 +1,11 @@
+
+function clean() {
+  sudo journalctl --vacuum-size=100M
+  sudo apt-get clean
+  doker system prune -f
+}
+
+function forget() {
+  rm -f "$HOME/.node_repl_history" "$HOME/.rediscli_history" "$HOME/.rediscli_history" "$HOME/.sqlite_history" "$HOME/.python_history" "$HOME/.bash_history"
+}
+
