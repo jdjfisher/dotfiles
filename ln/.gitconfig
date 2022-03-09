@@ -1,5 +1,6 @@
 [alias]
 	whoami = config user.email
+        unstage = reset HEAD --
 
 [user]
         name = jdjfisher
@@ -9,3 +10,6 @@
         
 [init]
 	defaultBranch = main
+
+[core]
+        editor = vim

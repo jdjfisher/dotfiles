@@ -3,7 +3,8 @@ alias reload="source ~/.bashrc"
 
 alias please="sudo"
 
-alias l="ls -la"
+alias ls="ls --color=auto"
+alias l="ls -lash"
 
 alias ..="cd .."
 alias ...="cd ../.."
