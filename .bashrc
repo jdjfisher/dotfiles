@@ -20,8 +20,8 @@ fi
 # ------------------------------------------------------------------
 
 # Resolve dotfiles repository absolute path 
-PROFILE_PATH=$(readlink -n $BASH_SOURCE)
-DOTFILES_PATH=$(dirname $PROFILE_PATH)
+SCRIPT_PATH=$(readlink -n $BASH_SOURCE)
+export DOTFILES_PATH=$(dirname $SCRIPT_PATH)
 
 # Exectue all files in the source directory
 for DOTFILE in $(find $DOTFILES_PATH/source)

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+rm -f "$HOME/.node_repl_history" "$HOME/.rediscli_history" "$HOME/.rediscli_history" "$HOME/.sqlite_history" "$HOME/.python_history" "$HOME/.bash_history"

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -x
+sudo journalctl --vacuum-size=100M
+sudo apt-get clean
+docker system prune -f
