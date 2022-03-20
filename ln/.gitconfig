@@ -1,9 +1,11 @@
 [alias]
 	whoami = config user.email
         unstage = reset HEAD --
+        graph = log --graph --decorate --pretty=oneline --abbrev-commit --color=always
 
 [user]
-        name = jdjfisher
+        # email = 
+        # name = 
         
 [pull]
         rebase = true

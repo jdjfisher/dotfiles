@@ -6,3 +6,7 @@ function echoeval() {
   fi
 }
 
+function gitdiffless() {
+  git diff --color=always --ws-error-highlight=all $@ | less -R
+}
+

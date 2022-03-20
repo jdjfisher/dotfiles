@@ -1,16 +1,23 @@
 
-alias reload="source ~/.bashrc"
-
-alias please="sudo"
-
+# Filesystem
 alias ls="ls --color=auto"
 alias l="ls -lash"
-
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 
-alias space="ncdu /"
+# Git
+alias gco="echoeval git checkout"
+alias gfo="echoeval git fetch origin"
+alias gpo="echoeval git push origin"
+alias gdl="echoeval gitdiffless"
+alias gstat="echoeval git status"
+alias glog="echoeval git log --pretty=oneline"
 
-# Laravel Sail
+# Laravel
 alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
+
+# Misc
+alias reload="source ~/.bashrc"
+alias space="ncdu /"
+alias please="sudo"
