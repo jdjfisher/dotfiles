@@ -6,7 +6,15 @@ function echoeval() {
   fi
 }
 
+function exists() {
+  command -v "$1" &> /dev/null
+}
+
 function gitdiffless() {
   git diff --color=always --ws-error-highlight=all $@ | less -R
 }
 
+function docker-play() {
+  image=${1?param missing - image.}
+  docker run --rm -it -v $(pwd):/playground $image /bin/bash -c "cd /playground && /bin/bash"
+}

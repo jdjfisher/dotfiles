@@ -15,6 +15,7 @@ alias gstat="echoeval git status"
 alias glog="echoeval git log --pretty=oneline"
 
 # Laravel
+alias pa='php artisan'
 alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 
 # Misc
