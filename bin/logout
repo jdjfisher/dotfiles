@@ -1,13 +1,11 @@
 #!/bin/bash
 
 files='
-  .node_repl_history
-  .rediscli_history
-  .rediscli_history
-  .sqlite_history
-  .python_history
-  .zsh_history
-  .bash_history
+  .docker/dockercf
+  .docker/config.json
+  .expo/state.json
+  .aws/credentials
+  .npmrc
 '
 
 for file in $files; do 
