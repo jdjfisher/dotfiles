@@ -7,9 +7,6 @@
         # email = 
         # name = 
         
-[pull]
-        rebase = true
-        
 [init]
 	defaultBranch = main
 

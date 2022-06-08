@@ -4,3 +4,4 @@ set -x
 sudo journalctl --vacuum-size=100M
 sudo apt-get clean
 docker system prune -f
+rm -rf ~/.cache/thumbnails/* ~/.cache/yarn/*
