@@ -46,3 +46,18 @@ for DOTFILE in $(find $DOTFILES_PATH/ln)
 do
   [ -f $DOTFILE ] && ln -sf $DOTFILE "$HOME/$(basename $DOTFILE)"
 done
+
+# Load OS specific dotfile
+case "$(uname -s)" in
+  Darwin)
+    source "$DOTFILES_PATH/source/os/.mac"
+    ;;
+
+  Linux)
+    source "$DOTFILES_PATH/source/os/.linux"
+    ;;
+
+  CYGWIN*|MINGW32*|MSYS*|MINGW*)
+    source "$DOTFILES_PATH/source/os/.windows"
+    ;;
+esac

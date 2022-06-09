@@ -1,6 +1,5 @@
 
 # Filesystem
-alias ls="ls --color=auto"
 alias l="ls -lash"
 alias ..="cd .."
 alias ...="cd ../.."
