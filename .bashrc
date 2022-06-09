@@ -23,9 +23,21 @@ fi
 SCRIPT_PATH=$(readlink -n $BASH_SOURCE)
 export DOTFILES_PATH=$(dirname $SCRIPT_PATH)
 
-# Exectue all files in the source directory
-for DOTFILE in $(find $DOTFILES_PATH/source)
-do
+# A list of dotfiles to load in order
+files='
+  .env
+  .path
+  .function
+  .prompt
+  .git-completion.bash
+  .alias
+'
+
+# Exectue all files present in the source directory
+for file in $files
+do 
+  DOTFILE="$DOTFILES_PATH/source/$file"
+  
   [ -f $DOTFILE ] && source $DOTFILE
 done
 
