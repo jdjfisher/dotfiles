@@ -4,5 +4,6 @@
 PATH="$DOTFILES_PATH/bin:$PATH"
 PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 PATH="$HOME/.local/bin:$PATH"
+PATH="$HOME/flutter/bin:$PATH"
 
 export PATH
