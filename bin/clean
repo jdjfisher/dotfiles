@@ -3,6 +3,7 @@
 set -x
 sudo journalctl --vacuum-size=100M
 sudo apt-get clean
-docker system prune -f
+docker system prune -fa
 rm -rf ~/.cache/thumbnails/*
+pip3 cache purge
 yarn cache clean
