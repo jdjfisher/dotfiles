@@ -7,3 +7,4 @@ docker system prune -fa
 rm -rf ~/.cache/thumbnails/*
 pip3 cache purge
 yarn cache clean
+npm cache clean --force
